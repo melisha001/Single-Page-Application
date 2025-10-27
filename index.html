@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SPA Task Manager</title>
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- App Content -->
+  <header>
+    <h1>Task Manager</h1>
+    <nav>
+      <button class="nav-link active" data-view="home">Home</button>
+      <button class="nav-link" data-view="add">Add Task</button>
+      <button class="nav-link" data-view="completed">Completed</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Home View -->
+    <section id="home" class="view active">
+      <h2>All Tasks</h2>
+      <p id="stats"></p>
+      <div id="task-list"></div>
+      <p id="empty-home" class="empty">No active tasks 🎉</p>
+    </section>
+
+    <!-- Add Task View -->
+    <section id="add" class="view">
+      <h2>Add a New Task</h2>
+      <form id="task-form">
+        <input type="text" id="task-title" placeholder="Enter task title..." required>
+        <textarea id="task-desc" placeholder="Enter task description..."></textarea>
+        <button type="submit">Add Task</button>
+      </form>
+    </section>
+
+    <!-- Completed View -->
+    <section id="completed" class="view">
+      <h2>Completed Tasks</h2>
+      <div id="completed-list"></div>
+      <p id="empty-completed" class="empty">No completed tasks yet.</p>
+    </section>
+  </main>
+
+ <footer>
+  <p>Developed by: Nithya M S, Parvathiy A R, Melisha S, Fathima Saheera J</p>
+</footer>
+
+
+  <!-- Link to JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
